@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.styl";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomeComponent from "./Home/Home.component";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="/" />
+        <Route index path="/" element={<HomeComponent />} />
       </Routes>
     </BrowserRouter>
   );
